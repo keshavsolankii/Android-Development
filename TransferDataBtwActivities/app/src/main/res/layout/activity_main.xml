@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/slabo_13px"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Food Court"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="60dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Enter the item and Quantity" />
+
+    <EditText
+        android:id="@+id/nameinput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:layout_margin="40dp"
+        android:inputType="text"
+        android:hint="Enter item name"/>
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="Enter quantity"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="200dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_height="50dp"
+        android:layout_margin="80dp"
+        android:layout_gravity="center"
+        android:text="Submit" />
+
+</LinearLayout>
